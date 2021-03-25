@@ -3,10 +3,21 @@ h1 {
     margin: 0 auto;
     padding: 10px;
     text-align: center;
+    color: #FFFFFF;
+    background-color: #7864ed;
+}
+
+#create-form {
+    background-color: #6495ed;
+    padding-bottom: 20px;
 }
 
 #memes {
     list-style: none;
+}
+
+.created-memes {
+    background-color: #64daed;
 }
 
 li {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Chibi Meme Generator</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/memes.js"></script>
+</head>
+<head>
+    <header>
+        <h1>Chibi Meme Generator</h1>
+    </header>
+</head>
+
+
+<form id="create-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="image">Image Link</label>
+                    <input type="url" class="form-control" id="image" placeholder="Link to your image" required>
+                    <small id="imghelp" class="form-text text-muted">Insert a full, valid link to the image you want above.</small>
+                </div>
+                <div class="form-group">
+                    <label for="upper-text">Text 1</label>
+                    <input type="text" class="form-control" id="upper-text" placeholder="Top Text">
+                </div>
+                <div class="form-group">
+                    <label for="lower-text">Text 2</label>
+                    <input type="text" class="form-control" id="lower-text" placeholder="Bottom Text">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</form>
+
+<div class="created-memes">
+    <ul id="memes">
+    </ul>
+</div>
+
+<footer>
+    <p>2021</p>
+</footer>

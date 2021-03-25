@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#memes {
+    list-style: none;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    display: inline-block;
+    position: relative;
+}
+
+img {
+    width: 500px;
+    padding: 20px;
+}
+
+#upper {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+
+#lower {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px 0 0 30px;
+    margin: 10px auto;
+}

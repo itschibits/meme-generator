@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
         event.preventDefault();
 
         let newMeme = document.createElement("li");
+
         let img = document.createElement("img");
         img.src = document.getElementById("image").value;
 
@@ -16,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
         let lowerText = document.createElement("div");
         lowerText.setAttribute("id", "lower");
         lowerText.innerText = document.getElementById("lower-text").value;
-        
-
 
         createdMemes.appendChild(newMeme);
         newMeme.appendChild(img);
@@ -27,14 +26,6 @@ document.addEventListener("DOMContentLoaded", function(){
         createForm.reset();
 
     });
-
-    createdMemes.addEventListener("mouseover", function(event){
-        event.target.parentNode.style["opacity"] = 0.5;
-    })
-
-    createdMemes.addEventListener("mouseout", function(event){
-        event.target.parentNode.style["opacity"] = 1;
-    })
 
     createdMemes.addEventListener("click", function(event){
         event.target.parentNode.remove();

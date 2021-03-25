@@ -27,4 +27,16 @@ document.addEventListener("DOMContentLoaded", function(){
         createForm.reset();
 
     });
+
+    createdMemes.addEventListener("mouseover", function(event){
+        event.target.parentNode.style["opacity"] = 0.5;
+    })
+
+    createdMemes.addEventListener("mouseout", function(event){
+        event.target.parentNode.style["opacity"] = 1;
+    })
+
+    createdMemes.addEventListener("click", function(event){
+        event.target.parentNode.remove();
+    })
 });
